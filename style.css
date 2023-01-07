@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --White:hsl(0, 0%, 100%);
+    --light-grey:hsl(217, 12%, 63%);
+    --medium-grey:hsl(216, 12%, 54%);
+    --dark-blue:hsl(213, 19%, 18%);
+    --very-dark-blue:hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--very-dark-blue);
+    color: var(--White);
+    line-height: 1.5;
+}
+
+main{
+    font-family: 'Overpass', sans-serif;
+    max-width: 350px;
+    background-color: var(--dark-blue);
+    border-radius: 1em;
+    padding: 1.3em;
+    
+    
+}
+
+main *{
+    margin: 0.5em 0;
+}
+
+p{
+    opacity: 0.5;
+    font-size: 0.85rem;
+}
+
+fieldset{
+    display: flex;
+    border: none;
+    justify-content: space-between;
+}
+
+button{
+    background-color: var(--Orange);
+    padding: 0.5em 2em;
+    border-radius: 0.75em;
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+}
+
+button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+input{
+    appearance: none;
+    width: 3em;
+    height: 3em;
+    border-radius: 1.5em;
+    background-color: var(--medium-grey);
+    opacity: 0.15;
+
+}
+
+label{
+    font-family: monospace;
+    font-size: 1rem;
+    position: relative;
+    top: 7.5px;
+    left: 31px;
+    color: var(--light-grey);
+    
+}
+
+input:hover{
+    background-color: var(--Orange);
+    opacity: 1;
+}
+
+input:checked {
+    background-color: var(--White);
+    opacity: 0.4;
+}
+
+.rating-page>img{
+    width: 2em;
+    height: 2em;
+    background-color: hsl(216, 12%, 24%);;
+    border-radius: 1em;
+    padding: 0.6em;
+}
+
+.rating-page{
+    display: inline;    
+}
+
+.thankyou-page{
+    display: none;
+    text-align: center;
+    place-content: center;
+}
+
+.submited-rating{
+    padding: 0.1em 0.5em;
+    border-radius: 1.5em;
+    background-color: hsl(216, 12%, 22%);
+    font-size: 1rem;
+    color: var(--Orange);
+    opacity: 0.7;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 1.7rem;
+    opacity: 0.8;
+}
