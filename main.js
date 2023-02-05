@@ -13,8 +13,8 @@ function submitClicked(){
     //rating selected msg is constructed and displayed.
     ratingdsp.innerText = 'You selected ' + rating + ' out of 5';
     // rating page becomes display:none (invisivle) and thankyou page becomes visible.
-    ratingPage.style.display = 'none';
-    thankyouPage.style.display = 'inline-block';
+    ratingPage.classList.add('hidden');
+    thankyouPage.classList.remove('hidden');
 }
 
 

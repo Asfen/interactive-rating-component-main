@@ -30,7 +30,7 @@ main{
     background-color: var(--dark-blue);
     border-radius: 1em;
     padding: 1.3em;
-    
+    text-align: center;
     
 }
 
@@ -101,16 +101,6 @@ input:checked {
     padding: 0.6em;
 }
 
-.rating-page{
-    display: inline;    
-}
-
-.thankyou-page{
-    display: none;
-    text-align: center;
-    place-content: center;
-}
-
 .submited-rating{
     padding: 0.1em 0.5em;
     border-radius: 1.5em;
@@ -125,4 +115,8 @@ input:checked {
 h1{
     font-size: 1.7rem;
     opacity: 0.8;
+}
+
+.hidden {
+    display: none;
 }
